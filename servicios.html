@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./assets/img/CharmyDogs-Logo2.png" type="image/png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Inicio | CharmyDogs</title>
+    <title>Servicios | CharmyDogs</title>
 </head>
 
 <body>
@@ -38,24 +39,265 @@
                         <a class="nav-link" href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
-                <button class="btn booking" type="submit">Reserva</button>
+                <button type="button" class="ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Reserva
+                    <span class="btn-span"></span>
+                </button>
             </div>
         </div>
     </nav>
 
-    <!-- Header -->
-    <header class="d-flex align-items-center">
-        <div class="container mx-5">
-            <div class="row  justify-content-end">
-                <div class="col-12 col-md-4">
-                    <img src="./assets/img/banner.png" class="img-fluid" alt="">
+    <!-- Inicio Modal Booking -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Reserva tu turno</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Déjanos tus datos aquí y te llamaremos para concertar una cita.</p>
+                    <!-- Formulario Modal -->
+                    <form class="formulario-contacto">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Nombre</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Jhon Doe">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Teléfono</label>
+                                        <input type="number" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="658 125 964">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Correo Electrónico</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="nombre@ejemplo.com">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlFecha">Fecha:</label>
+                                        <input type="date" class="form-control" id="exampleFormControlFecha">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Hora</label>
+                                        <input type="time" class="form-control" id="exampleFormControlInput1" step="1800">
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </form>
+                    <!-- Formulario Modal -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn confirmar">Enviar</button>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+    <!-- Fin Modal Booking -->
 
+    <!-- Header -->
+    <div class="container cabezero d-flex align-items-center justify-content-center">
+        <h1 class="titulo-seccion text-center">Nuestros Servicios</h1>
+    </div>
 
-    <!-- section 6 - Características -->
+    <!-- INICIO Paquetes -->
+    <!-- Paquete 1 -->
+    <section class="pb-5">
+        <div class="container-fluid fondo-aeroBlue py-5">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-12 col-md-5">
+                        <h3 class="titulo-seccion w-75 titulo-paquetes">Especial Cachorros</h3>
+                        <p class="pe-lg-5 justificado">El aseo es una parte importante del bienestar de su perro, y le recomendamos que introduzca la experiencia del spa a una
+                        edad temprana. Damos la bienvenida a todos los cachorros a partir de las 2 semanas posteriores a la segunda vacunación.
+                        Su paquete personalizado incluye un lavado suave con nuestro champú natural para cachorros CharmyDogs, seguido de un secado esponjoso tibio y un
+                        cepillado. Luego atendemos sus áreas de higiene, limpieza de oídos y uñas, seguido de un recorte de pies y facial, si lo
+                        requiere. 
+                        </p>
+                        <button type="button" class="btn booking" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Reservar Ahora
+                        </button>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img src="./assets/img/puppy.jpg" class="img-fluid w-75 shadow" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Paquete 2 -->
+    <section class="pt-5 pb-5">
+        <div class="container-fluid fondo-6 py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-5">
+                        <img src="./assets/img/teckel.jpg" class="img-fluid w-75 shadow" alt="">
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <h3 class="titulo-seccion w-75 titulo-paquetes">Pelo Corto</h3>
+                        <p class="pe-lg-5 justificado">Diseñado para perros de pelo corto, este tratamiento incluye dos lavados en uno de nuestros champús naturales CharmyDogs, elegido específicamente para complementar la piel y el pelaje de su perro.  
+                        </p>
+                        <p class="pe-lg-5 justificado">Para una mejor experiencia, ¿por qué no agregar
+                        el tratamiento acondicionador CharmyDogs por 5€ adicionales? Secamos y arreglamos la capa muerta, y nos ocupamos de las
+                        orejas y las uñas.
+                        </p>
+                        
+                        <button type="button" class="btn booking" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Reservar Ahora
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Paquete 3 -->
+    <section class="pt-5 pb-5">
+        <div class="container-fluid fondo-lila py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    
+                    <div class="col-12 col-md-5">
+                        <h3 class="titulo-seccion w-75 titulo-paquetes">Estilo Elegante</h3>
+                        <p class="pe-lg-5 justificado">Diseñado para mantener la apariencia elegante de su perro entre cepillados completos, este tratamiento incluye dos
+                        lavados en uno de nuestro champú natural CharmyDogs, elegido específicamente para complementar la piel y el pelaje de
+                        su perro, seguido de un secado y cepillado, con áreas de higiene, orejas y uñas atendidas.
+                        </p>
+                        <p class="pe-lg-5 justificado">A continuación, arreglamos el rostro y los pies y finalizamos con el spray natural CharmyDogs de tu elección.
+                        </p>
+                        <button type="button" class="btn booking" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Reservar Ahora
+                        </button>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="./assets/img/elegante.jpg" class="img-fluid w-75 shadow" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Paquete 4 -->
+    <section class="pt-5 pb-5">
+        <div class="container-fluid fondo-bronce py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-4">
+                        <img src="./assets/img/unico.jpg" class="img-fluid w-75 shadow" alt="">
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <h3 class="titulo-seccion w-75 titulo-paquetes">Estilo único</h3>
+                        <p class="pe-lg-5 justificado">Una sesión de peinado de la nariz a la cola, el Dapper Dog incluye dos lavados en uno de nuestros champús naturales
+                        CharmyDogs, elegido para complementar la piel y el pelaje de su perro, seguido de un secado y cepillado, con áreas de
+                        higiene, orejas y uñas atendidas. Una vez que el pelaje está preparado, le damos estilo al pelaje de su perro según sus indicaciones. Esto puede ser según el estándar de raza, o puede optar por un estilo alternativo, nuestro equipo estará encantado de aconsejarle. Elija un
+                        spray de acabado de nuestra gama para rematar su experiencia.
+                        </p>
+                        <button type="button" class="btn booking" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Reservar Ahora
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Paquete 5 -->
+    <section class="pt-5 pb-5">
+        <div class="container-fluid fondo-lilaClaro py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    
+                    <div class="col-12 col-md-5">
+                        <h3 class="titulo-seccion w-75 titulo-paquetes">Hand Stripping</h3>
+                        <p class="pe-lg-5 justificado">Pensado para perros con pelaje de alambre y sedoso, este servicio especializado ayuda a mantener la textura y el
+                        color del pelaje de su perro. Nuestro equipo estará encantado de analizar la idoneidad del pelaje de su perro para
+                        este tipo de tratamiento y adaptará un programa que se adapte a las necesidades de su perro. Como en
+                        todos nuestros otros paquetes, incluimos baño y secado, con áreas de higiene, orejas y uñas atendidas.
+                        </p>
+                        <button type="button" class="btn booking" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Reservar Ahora
+                        </button>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="./assets/img/peloDuro.jpg" class="img-fluid w-75 shadow" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FIN Paquetes -->
+
+    <!-- Otros Servicios -->
+    <section class="pt-5 pb-5">
+        <div class="container">
+            <h2 class="titulo-seccion text-center mb-5">OTROS SERVICIOS</h2>
+        </div>
+        <div class="container">
+            <div class="row px-5">
+                <!-- Otros 1 -->
+                <div class="col-12 col-md-6 ps-md-5" id="o1">
+                    <img src="./assets/img/dogs-icons/pug-icon.png" class="otros-icono" alt="">
+                    <h4 class="titulo-seccion text-center">Desenredado</h4>
+                    <p class="otros text-center">En este tratamiento de acondicionamiento profundo que contiene extractos de coco orgánico realizaremos un masaje a su perro, seguido de una envoltura con una toalla tibia. Perfecto para pelajes secos u opacos. Ayuda a calmar los pelajes
+                    dañados y protege contra los elementos.</p>
+                </div>
+                <!-- Otros 2 -->
+                <div class="col-12 col-md-6 pe-md-5" id="o2">
+                    <img src="./assets/img/dogs-icons/bolt-icon.png" class="otros-icono" alt="">
+                    <h4 class="titulo-seccion text-center">Nutrición Profunda</h4>
+                    <p class="otros text-center">Contiene ingredientes naturales: aloe vera, manteca de karité, manteca de cacao,
+                    manteca de semillas de mango y vitamina E, que ofrecen propiedades antisépticas e hidratantes naturales. Perfecto para
+                    codos secos o irritados, narices quemadas por el sol o agrietadas, o piel con picazón.</p>
+                </div>
+                <!-- Otros 3 -->
+                <div class="col-12 col-md-6 ps-md-5 pt-md-5" id="o3">
+                    <img src="./assets/img/dogs-icons/braco-icon.png" class="otros-icono" alt="">
+                    <h4 class="titulo-seccion text-center">Tratamiento Acondicionador</h4>
+                    <p class="otros text-center">Un tratamiento acondicionador a base de coco para añadir nutrición al pelaje. Apto para todo tipo de pelajes.</p>
+                </div>
+                <!-- Otros 4 -->
+                <div class="col-12 col-md-6 pe-md-5 mt-md-5" id="o4">
+                    <img src="./assets/img/dogs-icons/salchicha-icon.png" class="otros-icono" alt="">
+                    <h4 class="titulo-seccion text-center">Dientes Relucientes</h4>
+                    <p class="otros text-center">Ayude a preservar los dientes de su perro con nuestro tratamiento de Dientes Relucientes. El gel natural contiene una
+                    mezcla patentada de bicarbonato de sodio, enzimas vegetales naturales y aceite de menta, y controla los gérmenes que
+                    causan el mal aliento y la placa.</p>
+                </div>
+                <!-- Otros 5 -->
+                <div class="col-12 col-md-6 ps-md-5" id="o5">
+                    <img src="./assets/img/dogs-icons/pug-icon.png" class="otros-icono" alt="">
+                    <h4 class="titulo-seccion text-center">Tratamiento Facial</h4>
+                    <p class="otros text-center">Un masajeado suave alrededor de la cara, este tratamiento a base de arándanos es bueno para los ojos y los oídos.
+                    Ayuda a reducir la aparición de manchas de lágrimas en pelajes más claros y es perfecto para limpiar los pliegues
+                    faciales en nuestras razas populares como Pugs, Shih Tzus y Bulldogs.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Características -->
     <section class="pt-5 pb-5">
         <div class="container-fluid fondo-6 pt-5">
             <div class="container px-5">
@@ -85,18 +327,8 @@
     
     <!-- Footer -->
     <div class="container">
-        <footer class="row row-cols-5 pb-5">
-            <div class="col text-center">
-                <a href="/" class="d-flex align-items-center justify-content-center mb-3 link-dark text-decoration-none">
-                    <img src="./assets/img/CharmyDogs-Logo2.png" class="img-fluid w-50" alt="">
-                </a>
-                <p class="text-muted">CharmyDogs &copy; 2022</p>
-                <p class="footer-autor">Hecho por <a href="https://julianeggle.com" class="text-dark">Julián Eggle</a></p>
-            </div>
-    
-            <div class="col"></div>
-    
-            <div class="col">
+        <footer class="row px-md-5 pb-5">
+            <div class="col-6 col-md-3">
                 <h5 class="titulo-seccion">Enlaces</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-muted">Inicio</a></li>
@@ -107,7 +339,7 @@
                 </ul>
             </div>
     
-            <div class="col">
+            <div class="col-6 col-md-3">
                 <h5 class="titulo-seccion">Síguenos</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Facebook</a></li>
@@ -115,12 +347,25 @@
                 </ul>
             </div>
     
-            <div class="col">
+            <div class="col-6 col-md-3">
                 <h5 class="titulo-seccion">Date el gusto</h5>
                 <ul class="nav flex-column">
-                    <a href=""><button class="btn booking" type="submit">Reserva tu turno</button></a>
+                    <button type="button" class="w-75" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Reserva tu turno
+                        <span class="btn-span"></span>
+                    </button>
                 </ul>
             </div>
+    
+    
+            <div class="col-6 col-md-3 text-center">
+                <a href="/" class="d-flex align-items-center justify-content-center mb-3 link-dark text-decoration-none">
+                    <img src="./assets/img/CharmyDogs-Logo2.png" class="img-fluid w-50" alt="">
+                </a>
+                <p class="text-muted">CharmyDogs &copy; 2022</p>
+                <p class="footer-autor">Hecho por <a href="https://julianeggle.com" class="text-dark">Julián Eggle</a></p>
+            </div>
+    
         </footer>
     </div>
 

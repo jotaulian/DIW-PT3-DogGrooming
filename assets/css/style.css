@@ -1,5 +1,5 @@
 /* ===== FUENTES ===== */
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;900&family=Josefin+Slab&family=Poppins:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;900&family=Chewy&family=Josefin+Slab&family=Poppins:wght@400;700;800&display=swap");
 
 /* font-family: 'Alegreya Sans SC', sans-serif; */
 /* font-family: 'Josefin Slab', serif; */
@@ -10,13 +10,14 @@
   --clr-black: #222;
   --clr-gris: #5d6670;
   --clr-grisOscuro: #414447;
-  --clr-aeroBlue: #ccf3db;
+  --clr-aeroBlue: #e1fbeb;
   --clr-lila: #8f95d3;
   --clr-lilaClaro: #d3c4e3;
   --clr-silverPink: #d4bcb3;
   --clr-marron: #a77b39;
   --clr-marronClaro: #d4b483;
   --ff-titulo: "Alegreya Sans SC", sans-serif;
+  --ff-chewy: "Chewy", cursive;
   --ff-subtitulo: "Poppins", sans-serif;
   --ff-texto: "Poppins", sans-serif;
   --transition: all 0.3s linear;
@@ -52,7 +53,8 @@ a {
   background: white;
 }
 .logo {
-  font-family: var(--ff-titulo);
+  font-family: var(--ff-chewy);
+  letter-spacing: var(--spacing);
   font-size: 2rem;
   font-weight: 900;
   color: var(--clr-gris) !important;
@@ -68,14 +70,98 @@ a {
 /* BOTONES */
 .booking {
   background: var(--clr-marron);
-  border: 2px solid var(--clr-marron);
   color: white;
   text-transform: uppercase;
   border-radius: 0;
+  outline: none;
 }
 .booking:hover {
-  background: var(--clr-marronClaro);
+  /* background: var(--clr-marronClaro); */
+  border: 2px solid var(--clr-marron);
   color: white;
+  transform: scale(1.1);
+  transition: var(--transition);
+}
+
+.confirmar {
+  background: var(--clr-lilaClaro);
+  text-transform: uppercase;
+  border-radius: 0;
+  outline: none;
+}
+.confirmar:hover {
+  background: var(--clr-lila);
+  color: white;
+}
+
+.btn-secondary {
+  border-radius: 0;
+}
+
+/* From cssbuttons.io by @adamgiebl */
+button {
+  border: none;
+  display: block;
+  position: relative;
+  padding: 0.7em 2.4em;
+  font-size: 1rem;
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  color: var(--clr-marron);
+  z-index: 1;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+button .btn-span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  border: 2px solid var(--clr-marron);
+}
+
+button .btn-span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  background: var(--lightgray);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: var(--transition);
+}
+
+button:hover .btn-span::before {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100%;
+  background: var(--clr-marron);
+}
+
+button:hover {
+  color: white;
+}
+
+button:active span::before {
+  background: #2751cd;
+}
+
+/* MODAL */
+.modal-content {
+  border-radius: 0;
+}
+.modal-title {
+  color: var(--clr-lila);
+  font-family: "Chewy", cursive;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 /* HEADER */
@@ -83,6 +169,23 @@ header {
   background: url("../img/header.jpg") center/cover;
   height: 70vh;
   margin-top: 80px;
+}
+.header-productos {
+  background: url("../img/Productos/fondo.jpg") center/cover;
+  height: 70vh;
+  margin-top: 80px;
+  margin-bottom: 2rem;
+}
+.header-about {
+  background: url("../img/equipo/about-mobile.jpg") center/cover;
+  height: 70vh;
+  margin-top: 80px;
+  margin-bottom: 2rem;
+}
+.recuadro-about {
+  background: var(--clr-silverPink);
+  padding: 1rem;
+  max-height: 370px;
 }
 
 /* SECCIÓN 1 */
@@ -93,6 +196,8 @@ header {
 }
 .titulo-seccion {
   font-weight: 700;
+  font-family: "Chewy", cursive;
+  letter-spacing: var(--spacing);
   color: var(--clr-grisOscuro);
 }
 
@@ -122,7 +227,7 @@ header {
 }
 
 /* SECCIÓN 4 */
-.fondo-silverPink {
+.fondo-aeroBlue {
   background: var(--clr-aeroBlue);
 }
 
@@ -159,7 +264,92 @@ header {
   font-size: 0.75rem;
 }
 
-/* RESPONSIVE */
+/* SERVICIOS */
+.cabezero {
+  margin-top: 80px;
+  height: 30vh;
+}
+.cabezero h1 {
+  color: var(--clr-gris);
+  font-size: 4rem;
+}
+.titulo-paquetes {
+  border-bottom: 3px solid var(--clr-marron);
+}
+.fondo-bronce {
+  background: var(--clr-silverPink);
+}
+.fondo-lilaClaro {
+  background: var(--clr-lila);
+}
+.otros {
+  max-width: 350px;
+  margin: 0 auto;
+  font-size: 00.9rem;
+  color: var(--clr-gris);
+}
+.otros-icono {
+  width: 90px;
+  height: 90px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* PRODUCTOS */
+.recuadro-productos {
+  padding: 1rem;
+  max-height: 390px;
+}
+
+.fondo-producto-camomile {
+  background: linear-gradient(0deg, rgba(246, 221, 221, 0.8), #f6dddd),
+    url("../img/Productos/cm-bg.jpg") center/cover;
+}
+.fondo-producto-lavanda {
+  background: linear-gradient(0deg, rgba(246, 221, 221, 0.8), #dfd4eb),
+    url("../img/Productos/lav-bg.jpg") center/cover;
+}
+.fondo-producto-citrus {
+  background: linear-gradient(0deg, rgba(246, 221, 221, 0.8), rgb(251, 197, 97)),
+    url("../img/Productos/grapefruit.jpg") center/cover;
+}
+.fondo-producto-coco {
+  background: linear-gradient(
+      0deg,
+      rgba(200, 193, 169, 0.787),
+      rgba(246, 221, 221, 0.8)
+    ),
+    url("../img/Productos/coconut.jpg") center/cover;
+}
+.img-producto {
+  max-width: 130px;
+  margin-top: 0rem;
+}
+
+/* CONTACTO */
+.contacto {
+  margin-top: 80px;
+  margin-bottom: -3rem;
+  background: url("../img/fondoPatitas.jpg") center/cover fixed;
+  height: 90vh;
+}
+.marron {
+  color: #a77b39;
+}
+.contenedor-formulario-contacto {
+  max-width: 90%;
+  background: white;
+  padding: 1rem 1rem;
+  box-shadow: var(--dark-shadow);
+}
+.formulario-contacto input,
+.formulario-contacto textarea {
+  border-radius: 0px;
+}
+
+/* =================================== */
+/* ========== RESPONSIVE ============= */
+/* =================================== */
 @media screen and (min-width: 768px) {
   .recuadro {
     margin-right: -3rem;
@@ -170,14 +360,76 @@ header {
   .fotoAD {
     height: 275px;
     margin-left: 2rem;
+    box-shadow: var(--dark-shadow);
   }
   .foto-staff {
     margin-bottom: -5rem;
+    box-shadow: var(--light-shadow);
   }
   .foto-golden {
     margin-left: -5rem;
+    box-shadow: var(--light-shadow);
   }
   #seccion-5 {
     padding-top: 8rem;
+  }
+
+  /* OTROS SERVICIOS MEDIA QUERY */
+  #o2 {
+    transform: translateY(50%);
+  }
+
+  #o4 {
+    transform: translateY(50%);
+  }
+
+  /* PRODUCTOS MQ */
+  .recuadro-productos {
+    padding: 2rem;
+    max-height: 370px;
+  }
+  .img-producto {
+    max-width: 160px;
+    margin-top: -5rem;
+  }
+
+  /* QUIENES SOMOS */
+  .header-about {
+    background: url("../img/equipo/about.jpg") center/cover;
+    height: 70vh;
+    margin-top: 80px;
+    margin-bottom: 2rem;
+  }
+  .info-equipo {
+    padding-top: 2rem;
+    text-align: center;
+  }
+  .info-descripcion {
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+  .equipo-img {
+    height: 100%;
+    max-height: 80vh;
+  }
+  .etiqueta {
+    display: none;
+  }
+
+  /* CONTACTO MQ */
+  .contacto {
+    height: 80vh;
+  }
+  .contenedor-formulario-contacto {
+    max-width: 60%;
+    background: white;
+    padding: 2rem 1rem;
+    box-shadow: var(--dark-shadow);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .etiqueta {
+    display: block;
   }
 }

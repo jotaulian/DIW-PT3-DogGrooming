@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="CharmyDogs es una peluqueria para perros ubicada en Marbella que ofrece una gran variedad de productos y servicios para el cuidado de tu mascota. Entre nuestros servicios se encuentran el lavado, secado, corte y peinado de nuestros amigos peludos.">
     <link rel="shortcut icon" href="./assets/img/CharmyDogs-Logo2.png" type="image/png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
@@ -38,10 +40,76 @@
                         <a class="nav-link" href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
-                <button class="btn booking" type="submit">Reserva</button>
+                <button type="button" class="ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Reserva
+                    <span class="btn-span"></span>
+                </button>
             </div>
         </div>
     </nav>
+    <!-- Inicio Modal Booking -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Reserva tu turno</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Déjanos tus datos aquí y te llamaremos para concertar una cita.</p>
+                    <!-- Formulario Modal -->
+                    <form class="formulario-contacto">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Nombre</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Jhon Doe">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Teléfono</label>
+                                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="658 125 964">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Correo Electrónico</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="nombre@ejemplo.com">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12 col-md-6">
+                                        <div class="form-group">
+                                            <label for="exampleFormControlFecha">Fecha:</label>
+                                            <input type="date" class="form-control" id="exampleFormControlFecha">
+                                        </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Hora</label>
+                                        <input type="time" class="form-control" id="exampleFormControlInput1" step="1800">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </form>
+                    <!-- Formulario Modal -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn confirmar">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Modal Booking -->
     
     <!-- Header -->
     <header class="d-flex align-items-center">
@@ -62,7 +130,10 @@
                     <h2 class="titulo-seccion">Peluqueria Canina Natural</h2>
                     <p>Con CharmyDogs puede estar seguro de que nuestro personal tratará con mucho cuidado a su mascota en un ambiente limpio y
                     seguro, y sabrá que el servicio tendrá un acabado excepcionalmente alto a un precio justo.</p>
-                    <a href=""><button class="btn booking" type="submit">Reserva tu turno</button></a>
+                    <button type="button" class="btn booking" 
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Reserva tu turno
+                    </button>
                 </div>
                 <!-- Galeria -->
                 <div class="col-12 col-md-6 fotos">
@@ -123,7 +194,7 @@
                                 <div class="container">
                                     <div class="row justify-content-center">
                                         <div class="col-12 col-md-4">
-                                                <h5 class="fw-bold">Coco</h5>
+                                                <h3 class="titulo-seccion text-light">Coco</h3>
                                                 <p>Coco ha recibido el tratamiento Spoiled Puppy. Lo bañamos 
                                                 con champú para cachorros CharmyDogs, lo secamos suavemente, limpiamos sus orejas y cortamos las uñas de los pies. Luego
                                                 recortamos alrededor de sus ojos, cara y pies y atendimos sus áreas de higiene, y terminamos con un rociado de nuestro
@@ -140,8 +211,9 @@
                                     <div class="row justify-content-center">
                                         <div class="col-12 col-md-4">
                                             <div class="">
-                                                <h5 class="fw-bold">Nuria</h5>
-                                                <p>Some representative placeholder content for the first slide.</p>
+                                                <h3 class="titulo-seccion text-light">Pepa</h3>
+                                                <p>Aquí tenemos a Pepa, antes y después de su tratamiento Perros Elegantes. La lavamos con el champú
+                                                CharmyDogs Limpieza Profunda que eliminó la grasa de su pelaje y, al mismo tiempo, fue amable con su piel.</p>
                                             </div>
                                         </div>
                                         <div class="col-12 col-md-5">
@@ -155,8 +227,10 @@
                                     <div class="row justify-content-center">
                                         <div class="col-12 col-md-4">
                                             <div class="">
-                                                <h5 class="fw-bold">Rambo</h5>
-                                                <p>Some representative placeholder content for the first slide.</p>
+                                                <h3 class="titulo-seccion text-light">Rambo</h3>
+                                                <p>Rambo es uno de nuestros clientes estrella, nos visita desde que era un cachorrito y nuestro staff explota de felicidad cada vez lo ve.</p>
+                                                <p>El corte clásico elegido por sus dueños requiere de tijera manual, de esta manera los estilistas pueden lograr un
+                                                hermoso acabado.</p>
                                             </div>
                                         </div>
                                         <div class="col-12 col-md-5">
@@ -170,8 +244,8 @@
                                     <div class="row justify-content-center">
                                         <div class="col-12 col-md-4">
                                             <div class="">
-                                                <h5 class="fw-bold">Sultan</h5>
-                                                <p>Some representative placeholder content for the first slide.</p>
+                                                <h3 class="titulo-seccion text-light">Nala</h3>
+                                                <p>Nala es una hermosa Samoyedo que nos visita una vez al mes para que cuidemos su pelaje. Luego de realizar un lavado y secado de alta velocidad, aplicamos nuestra técnica de cepillado especial que reduce notablemente el desprendimiento de pelo en la casa. Tambien cortamos sus uñas y recortamos el pelaje entre las almohadillas de las patas</p>
                                             </div>
                                         </div>
                                         <div class="col-12 col-md-5">
@@ -198,7 +272,7 @@
 
     <!-- section 4 -->
     <section class="pt-5 pb-5">
-        <div class="container-fluid fondo-silverPink pt-5">
+        <div class="container-fluid fondo-aeroBlue pt-5">
             <div class="container">
                 <div class="row justify-content-end">
                     <div class="col-12 col-md-4">
@@ -232,7 +306,7 @@
                     <a href="./productos.html"><button class="btn booking" type="submit">ver productos</button></a>
                 </div>
                 <!-- Galeria -->
-                <div class="col-12 col-md-5 fotos">
+                <div class="col-12 col-md-5 fotos ">
                     <img src="./assets/img/golden.jpg" class="img-fluid foto-golden" alt="">
                 </div>
             </div>
@@ -266,18 +340,8 @@
 
     <!-- Footer -->
         <div class="container">
-            <footer class="row row-cols-5 pb-5">
-                <div class="col text-center">
-                    <a href="/" class="d-flex align-items-center justify-content-center mb-3 link-dark text-decoration-none">
-                        <img src="./assets/img/CharmyDogs-Logo2.png" class="img-fluid w-50" alt="">
-                    </a>
-                    <p class="text-muted">CharmyDogs &copy; 2022</p>
-                    <p class="footer-autor">Hecho por <a href="https://julianeggle.com" class="text-dark">Julián Eggle</a></p>
-                </div>
-        
-                <div class="col"></div>
-        
-                <div class="col">
+            <footer class="row px-md-5 pb-5">
+                <div class="col-6 col-md-3">
                     <h5 class="titulo-seccion">Enlaces</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-muted">Inicio</a></li>
@@ -288,7 +352,7 @@
                     </ul>
                 </div>
         
-                <div class="col">
+                <div class="col-6 col-md-3">
                     <h5 class="titulo-seccion">Síguenos</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Facebook</a></li>
@@ -296,12 +360,25 @@
                     </ul>
                 </div>
         
-                <div class="col">
+                <div class="col-6 col-md-3">
                     <h5 class="titulo-seccion">Date el gusto</h5>
                     <ul class="nav flex-column">
-                        <a href=""><button class="btn booking" type="submit">Reserva tu turno</button></a>
+                        <button type="button" class="w-75" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Reserva tu turno
+                            <span class="btn-span"></span>
+                        </button>
                     </ul>
                 </div>
+
+
+                <div class="col-6 col-md-3 text-center">
+                    <a href="/" class="d-flex align-items-center justify-content-center mb-3 link-dark text-decoration-none">
+                        <img src="./assets/img/CharmyDogs-Logo2.png" class="img-fluid w-50" alt="">
+                    </a>
+                    <p class="text-muted">CharmyDogs &copy; 2022</p>
+                    <p class="footer-autor">Hecho por <a href="https://julianeggle.com" class="text-dark">Julián Eggle</a></p>
+                </div>
+                
             </footer>
         </div>
 

@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./assets/img/CharmyDogs-Logo2.png" type="image/png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -38,21 +39,203 @@
                         <a class="nav-link" href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
-                <button class="btn booking" type="submit">Reserva</button>
+                <button type="button" class="ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Reserva
+                    <span class="btn-span"></span>
+                </button>
             </div>
         </div>
     </nav>
 
-    <!-- Header -->
-    <header class="d-flex align-items-center">
-        <div class="container mx-5">
-            <div class="row  justify-content-end">
-                <div class="col-12 col-md-4">
-                    <img src="./assets/img/banner.png" class="img-fluid" alt="">
+    <!-- Inicio Modal Booking -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Reserva tu turno</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Déjanos tus datos aquí y te llamaremos para concertar una cita.</p>
+                    <!-- Formulario Modal -->
+                    <form class="formulario-contacto">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Nombre</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Jhon Doe">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Teléfono</label>
+                                        <input type="number" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="658 125 964">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Correo Electrónico</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="nombre@ejemplo.com">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlFecha">Fecha:</label>
+                                        <input type="date" class="form-control" id="exampleFormControlFecha">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Hora</label>
+                                        <input type="time" class="form-control" id="exampleFormControlInput1" step="1800">
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </form>
+                    <!-- Formulario Modal -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn confirmar">Enviar</button>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+    <!-- Fin Modal Booking -->
+
+    <!-- Header -->
+    <div class="d-flex align-items-center header-productos">
+        <div class="container mx-5">
+            <div class="row  justify-content-end">
+                <div class="col-12 col-md-6 col-xl-4 recuadro-productos fondo-lila shadow ps-md-5">
+                    <h2 class="titulo-seccion">Productos CharmyDogs</h2>
+                    <p>Dele un mimo a su mascota! Nuestros productos son fabricados con una selección de ingredientes de origen natural y sostenible,
+                    elegidos por sus conocidas propiedades beneficiosas. No encontrará jabones artificiales, fosfatos, DEA o sulfatos
+                    artificiales en la gama de productos CharmyDogs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Producto 1 -->
+    <section class="pt-5 pb-5">
+        <div class="container-fluid fondo-producto-camomile py-5">
+            <div class="container">
+                <div class="row justify-content-start">
+                    <div class="col-12 col-md-5 text-center text-md-end">
+                        <img src="./assets/img/Productos/camomile.png"  class="img-fluid img-producto mb-3" alt="">
+                    </div>
+                    <div class="col-12 col-md-5 ps-md-5">
+                        <h5 class="titulo-seccion w-75 titulo-paquetes">Calm & Soothe - Spray Corporal</h5>
+                        <p class="pe-lg-5 justificado">En esta bruma corporal suave se combinan la manzanilla orgánica con la vitamina E. Un spray delicado creado para calmar y
+                        suavizar la piel de su mascota. La fórmula Calm & Soothe es ideal para refrescarse entre baños, ayudando a nutrir la piel y
+                        promover un pelaje saludable y  brillante.
+                        </p>
+    
+                        <button type="button" class="btn booking" >Comprar ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Producto 2 -->
+    <section class="pt-5 pb-5">
+        <div class="container-fluid fondo-producto-lavanda py-5">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-12 col-md-5">
+                        <h5 class="titulo-seccion w-75 titulo-paquetes">Spray Corporal para cachorros</h5>
+                        <p class="pe-lg-5 justificado">El aceite de lavanda y la vitamina E se combinan en este spray corporal suave y delicado creado especialmente
+                        para cachorros. Ideal para ayudar a refrescar el pelaje de su cachorro entre baños, el delicado rocío nutre la piel y
+                        promueve un pelaje saludable y brillante.
+                        </p>
+                        <button type="button" class="btn booking" >Comprar ahora</button>
+                    </div>
+
+                    <div class="col-12 col-md-5 text-center text-md-start">
+                        <img src="./assets/img/Productos/puppy.png" class="img-fluid img-producto pt-3" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Producto 3 -->
+    <section class="pt-5 pb-5">
+        <div class="container-fluid fondo-producto-citrus py-5">
+            <div class="container">
+                <div class="row justify-content-start">
+                    <div class="col-12 col-md-5 text-center text-md-end">
+                        <img src="./assets/img/Productos/camomile.png"  class="img-fluid img-producto mb-3" alt="">
+                    </div>
+                    <div class="col-12 col-md-5 ps-md-5">
+                        <h5 class="titulo-seccion w-75 titulo-paquetes">Nature's Glow - Spray Corporal</h5>
+                        <p class="pe-lg-5 justificado">Los aceites de pomelo, naranja y mandarina se combinan con la vitamina E en este spray corporal creado para desodorizar y acondicionar. Adecuado para todo tipo de pieles, es ideal para aplicar entre
+                        baños, ayudando a nutrir la piel y promover un pelaje saludable y reluciente.
+                        </p>
+    
+                        <button type="button" class="btn booking" >Comprar ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Producto 4 -->
+    <section class="pt-5 pb-5">
+        <div class="container-fluid fondo-producto-coco py-5">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-12 col-md-5">
+                        <h5 class="titulo-seccion w-75 titulo-paquetes">Acondicionador con Coco</h5>
+                        <p class="pe-lg-5 justificado">Este acondicionador suave y delicado pero altamente
+                        efectivo contiene ingredientes que incluyen aceite de coco orgánico y vitamina E para brindar humedad adicional a los
+                        pelajes que más lo necesitan, dejando el pelaje de su mascota maravillosamente nutrido, súper suave y con olor
+                        fresco.
+                        </p>
+                        <button type="button" class="btn booking">Comprar ahora</button>
+                    </div>
+    
+                    <div class="col-12 col-md-5 text-center text-md-start">
+                        <img src="./assets/img/Productos/coco.png" class="img-fluid img-producto pt-3" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Producto 5 -->
+    <section class="pt-5 pb-5">
+        <div class="container-fluid fondo-producto-lavanda py-5">
+            <div class="container">
+                <div class="row justify-content-start">
+                    <div class="col-12 col-md-5 text-center text-md-end">
+                        <img src="./assets/img/Productos/shampoo.png"  class="img-fluid img-producto mb-3" alt="">
+                    </div>
+                    <div class="col-12 col-md-5 ps-md-5">
+                        <h5 class="titulo-seccion w-75 titulo-paquetes">Fresh Lavander Shampoo</h5>
+                        <p class="pe-lg-5 justificado">Este Shampoo contiene las propiedades efectivas de la vitamina E y el aceite de lavanda que deja un aroma limpio,fresco y un pelaje increíblemente suave. Eliminando suavemente la suciedad y la grasa mientras
+                        acondiciona y calma la piel de los cachorros, este lujoso shampoo ayuda a mantener el equilibrio correcto del PH y no
+                        irrita ni seca la piel.
+                        </p>
+    
+                        <button type="button" class="btn booking" >Comprar ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- section 6 - Características -->
@@ -85,18 +268,8 @@
     
     <!-- Footer -->
     <div class="container">
-        <footer class="row row-cols-5 pb-5">
-            <div class="col text-center">
-                <a href="/" class="d-flex align-items-center justify-content-center mb-3 link-dark text-decoration-none">
-                    <img src="./assets/img/CharmyDogs-Logo2.png" class="img-fluid w-50" alt="">
-                </a>
-                <p class="text-muted">CharmyDogs &copy; 2022</p>
-                <p class="footer-autor">Hecho por <a href="https://julianeggle.com" class="text-dark">Julián Eggle</a></p>
-            </div>
-    
-            <div class="col"></div>
-    
-            <div class="col">
+        <footer class="row px-md-5 pb-5">
+            <div class="col-6 col-md-3">
                 <h5 class="titulo-seccion">Enlaces</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-muted">Inicio</a></li>
@@ -107,7 +280,7 @@
                 </ul>
             </div>
     
-            <div class="col">
+            <div class="col-6 col-md-3">
                 <h5 class="titulo-seccion">Síguenos</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Facebook</a></li>
@@ -115,12 +288,25 @@
                 </ul>
             </div>
     
-            <div class="col">
+            <div class="col-6 col-md-3">
                 <h5 class="titulo-seccion">Date el gusto</h5>
                 <ul class="nav flex-column">
-                    <a href=""><button class="btn booking" type="submit">Reserva tu turno</button></a>
+                    <button type="button" class="w-75" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Reserva tu turno
+                        <span class="btn-span"></span>
+                    </button>
                 </ul>
             </div>
+    
+    
+            <div class="col-6 col-md-3 text-center">
+                <a href="/" class="d-flex align-items-center justify-content-center mb-3 link-dark text-decoration-none">
+                    <img src="./assets/img/CharmyDogs-Logo2.png" class="img-fluid w-50" alt="">
+                </a>
+                <p class="text-muted">CharmyDogs &copy; 2022</p>
+                <p class="footer-autor">Hecho por <a href="https://julianeggle.com" class="text-dark">Julián Eggle</a></p>
+            </div>
+    
         </footer>
     </div>
 

@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./assets/img/CharmyDogs-Logo2.png" type="image/png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Inicio | CharmyDogs</title>
+    <title>Quiénes Somos | CharmyDogs</title>
 </head>
 
 <body>
@@ -38,26 +39,157 @@
                         <a class="nav-link" href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
-                <button class="btn booking" type="submit">Reserva</button>
+                <button type="button" class="ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Reserva
+                    <span class="btn-span"></span>
+                </button>
             </div>
         </div>
     </nav>
 
-    <!-- Header -->
-    <header class="d-flex align-items-center">
-        <div class="container mx-5">
-            <div class="row  justify-content-end">
-                <div class="col-12 col-md-4">
-                    <img src="./assets/img/banner.png" class="img-fluid" alt="">
+    <!-- Inicio Modal Booking -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Reserva tu turno</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Déjanos tus datos aquí y te llamaremos para concertar una cita.</p>
+                    <!-- Formulario Modal -->
+                    <form class="formulario-contacto">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Nombre</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Teléfono</label>
+                                        <input type="number" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Correo Electrónico</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="nombre@ejemplo.com">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlFecha">Fecha:</label>
+                                        <input type="date" class="form-control" id="exampleFormControlFecha">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Hora</label>
+                                        <input type="time" class="form-control" id="exampleFormControlInput1" step="1800">
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </form>
+                    <!-- Formulario Modal -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn confirmar">Enviar</button>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+    <!-- Fin Modal Booking -->
 
+    <!-- Header -->
+    <div class="d-flex align-items-end align-items-md-center header-about">
+        <div class="container mx-5 mb-5">
+            <div class="row  justify-content-end">
+                <div class="col-12 col-md-6 col-xl-4 recuadro-about shadow">
+                    <h3 class="text-center">Nosotros</h3>
+                    <h1 class="titulo-seccion text-center">Estamos locos por las mascotas</h1>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- sección 1 -->
+    <div class="container py-5 my-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="titulo-seccion text-center">¿Quieres conocernos un poco mejor?</h2>
+                <p class="text-center pt-3">Te presentamos al equipo de CharmyDogs: <br>
+                un equipo preparado y diverso, unido por el amor a los perritos.</p>
+            </div>
+        </div>
+    </div>
 
-    <!-- section 6 - Características -->
-    <section class="pt-5 pb-5">
+    <!-- Seccion 2 - Equipo -->
+    <div class="container-fluid">
+        <!-- Fila 1 -->
+        <div class="row">
+            <div class="col-12 col-md-3 fondo-lila pt-5 text-center">
+                <h3 class="titulo-seccion">Carmela</h3>
+                <p>Dueña</p>
+                <hr class="mb-4">
+                <p class="etiqueta">Responsable de ventas, clientes, asuntos internos y fotografía.</p>
+                <p class="info-descripcion">“Soy una persona atenta y trabajadora, dedicada a mi trabajo y ante todo a nuestros pequeños clientes peludos,
+                asegurándome que tengan buena salud y estén felices.”</p>
+            </div>
+            <div class="col-12 col-md-3 p-0">
+                <img src="./assets/img/equipo/jefa.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-12 col-md-3 fondo-aeroBlue pt-5 text-center">
+                <h3 class="titulo-seccion">Marcos</h3>
+                <p>Responsable Peluquería</p>
+                <hr class="mb-4">
+                <p class="etiqueta">Formación:Publicidad y Marketing. Peluquería canina.</p>
+                <p class="info-descripcion">“Soy peluquero canino desde 2015. Dirigí mi propia academia de peluquería canina en Barcelona pero decidí dedicar más tiempo a
+                competiciones y disfrutar de la vida andaluza mientras tengo mi base en CharmyDogs.”</p>
+            </div>
+            <div class="col-12 col-md-3 p-0">
+                <img src="./assets/img/equipo/marcos.jpg" class="img-fluid equipo-img" alt="">
+            </div>
+        </div>
+        <!-- Fila 2 -->
+        <div class="row">
+            <div class="col-12 col-md-3 p-0">
+                <img src="./assets/img/equipo/ana.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-12 col-md-3 fondo-aeroBlue pt-5 text-center">
+                <h3 class="titulo-seccion">Mariana</h3>
+                <p>Responsable Tratamientos</p>
+                <hr class="mb-4">
+                <p class="etiqueta">Lavado, Secado, Cepillado y Aplicación de Productos.</p>
+                <p class="info-descripcion">“Me considero una persona alegre y simpática, me encanta bailar flamenco y cantar. Soy súper súper amante de los animales. Y
+                sobretodo de los perros. ¡Me hacen muy feliz!”</p>
+            </div>
+            <div class="col-12 col-md-3 p-0">
+                <img src="./assets/img/equipo/casandra.png" class="img-fluid equipo-img" alt="">
+            </div>
+            <div class="col-12 col-md-3 fondo-lila pt-5 text-center">
+                <h3 class="titulo-seccion">Emma</h3>
+                <p>Asistente Peluquería</p>
+                <hr class="mb-4">
+                <p class="etiqueta">Estudiante de Peluquería canina.</p>
+                <p class="info-descripcion">“Mi amor por los animales comenzó cuando era pequeña, siempre ayudando en voluntariados, informando e involucrandome en actividades que beneficien a los perritos. Amo mi trabajo ya que me paso el día bañada en besos, no existen días tristes en esta profesion.”</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- section Características -->
+    <section class="pb-5">
         <div class="container-fluid fondo-6 pt-5">
             <div class="container px-5">
                 <div class="row justify-content-center text-center">
@@ -86,18 +218,8 @@
     
     <!-- Footer -->
     <div class="container">
-        <footer class="row row-cols-5 pb-5">
-            <div class="col text-center">
-                <a href="/" class="d-flex align-items-center justify-content-center mb-3 link-dark text-decoration-none">
-                    <img src="./assets/img/CharmyDogs-Logo2.png" class="img-fluid w-50" alt="">
-                </a>
-                <p class="text-muted">CharmyDogs &copy; 2022</p>
-                <p class="footer-autor">Hecho por <a href="https://julianeggle.com" class="text-dark">Julián Eggle</a></p>
-            </div>
-    
-            <div class="col"></div>
-    
-            <div class="col">
+        <footer class="row px-md-5 pb-5">
+            <div class="col-6 col-md-3">
                 <h5 class="titulo-seccion">Enlaces</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-muted">Inicio</a></li>
@@ -108,7 +230,7 @@
                 </ul>
             </div>
     
-            <div class="col">
+            <div class="col-6 col-md-3">
                 <h5 class="titulo-seccion">Síguenos</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Facebook</a></li>
@@ -116,12 +238,25 @@
                 </ul>
             </div>
     
-            <div class="col">
+            <div class="col-6 col-md-3">
                 <h5 class="titulo-seccion">Date el gusto</h5>
                 <ul class="nav flex-column">
-                    <a href=""><button class="btn booking" type="submit">Reserva tu turno</button></a>
+                    <button type="button" class="w-75" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Reserva tu turno
+                        <span class="btn-span"></span>
+                    </button>
                 </ul>
             </div>
+    
+    
+            <div class="col-6 col-md-3 text-center">
+                <a href="/" class="d-flex align-items-center justify-content-center mb-3 link-dark text-decoration-none">
+                    <img src="./assets/img/CharmyDogs-Logo2.png" class="img-fluid w-50" alt="">
+                </a>
+                <p class="text-muted">CharmyDogs &copy; 2022</p>
+                <p class="footer-autor">Hecho por <a href="https://julianeggle.com" class="text-dark">Julián Eggle</a></p>
+            </div>
+    
         </footer>
     </div>
 
