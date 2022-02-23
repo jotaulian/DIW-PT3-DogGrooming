@@ -84,18 +84,18 @@ a {
 }
 
 .confirmar {
-  background: var(--clr-lilaClaro);
-  text-transform: uppercase;
+  background: rgb(125, 194, 125);
   border-radius: 0;
   outline: none;
 }
 .confirmar:hover {
-  background: var(--clr-lila);
+  background: rgb(101, 190, 101);
   color: white;
 }
 
-.btn-secondary {
+.btn-danger {
   border-radius: 0;
+  outline: none;
 }
 
 /* From cssbuttons.io by @adamgiebl */
@@ -105,14 +105,15 @@ button {
   position: relative;
   padding: 0.7em 2.4em;
   font-size: 1rem;
-  background: transparent;
+  background: var(--clr-marron);
   cursor: pointer;
   user-select: none;
   overflow: hidden;
-  color: var(--clr-marron);
+  color: white;
   z-index: 1;
   font-family: inherit;
   font-weight: 500;
+  outline: 2px solid var(--clr-marron);
 }
 
 button .btn-span {
@@ -123,7 +124,6 @@ button .btn-span {
   height: 100%;
   background: transparent;
   z-index: -1;
-  border: 2px solid var(--clr-marron);
 }
 
 button .btn-span::before {
@@ -142,15 +142,19 @@ button .btn-span::before {
 button:hover .btn-span::before {
   transform: translate(-50%, -50%) rotate(-90deg);
   width: 100%;
-  background: var(--clr-marron);
+  background: white;
 }
 
 button:hover {
-  color: white;
+  color: var(--clr-marron);
 }
 
 button:active span::before {
   background: #2751cd;
+}
+
+.outline-off {
+  outline: none;
 }
 
 /* MODAL */
@@ -188,14 +192,31 @@ header {
   max-height: 370px;
 }
 
+.recuadro-voucher {
+  background: var(--clr-lilaClaro);
+  padding: 2rem;
+  max-height: 500px;
+}
+.recuadro-voucher h2 {
+  font-size: 1.5rem;
+  color: #414447;
+}
+
 /* SECCIÓN 1 */
 .recuadro {
   background: var(--clr-silverPink);
   padding: 2rem;
-  max-height: 370px;
+  max-height: 500px;
 }
 .titulo-seccion {
   font-weight: 700;
+  font-family: "Chewy", cursive;
+  letter-spacing: var(--spacing);
+  color: var(--clr-grisOscuro);
+}
+.seccion-caracteristicas .titulo-seccion {
+  font-weight: 700;
+  font-size: 1.5rem;
   font-family: "Chewy", cursive;
   letter-spacing: var(--spacing);
   color: var(--clr-grisOscuro);
@@ -275,6 +296,7 @@ header {
 }
 .titulo-paquetes {
   border-bottom: 3px solid var(--clr-marron);
+  font-size: 23px;
 }
 .fondo-bronce {
   background: var(--clr-silverPink);
@@ -326,6 +348,12 @@ header {
   margin-top: 0rem;
 }
 
+/* QUIENES SOMOS */
+.span-about {
+  font-size: 27px;
+  margin: 0 auto;
+}
+
 /* CONTACTO */
 .contacto {
   margin-top: 80px;
@@ -352,10 +380,10 @@ header {
 /* =================================== */
 @media screen and (min-width: 768px) {
   .recuadro {
-    margin-right: -3rem;
+    margin-right: -2.5rem;
   }
   .fotos {
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
   .fotoAD {
     height: 275px;

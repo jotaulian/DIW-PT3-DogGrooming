@@ -17,7 +17,7 @@
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand logo" href="#"><img src="./assets/img/CharmyDogs-Logo2.png" class="logo-img" alt="">CharmyDogs</a>
+            <a class="navbar-brand logo" href="./index.html"><img src="./assets/img/CharmyDogs-Logo2.png" class="logo-img" alt="Logo de la empresa. Es un perro con moño con la cabeza inclinada hacia un costado">CharmyDogs</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -71,14 +71,14 @@
                             <div class="row mt-3">
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
-                                        <label for="exampleFormControlInput1">Teléfono</label>
-                                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="658 125 964">
+                                        <label for="exampleFormControlInput2">Teléfono</label>
+                                        <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="658 125 964">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
-                                        <label for="exampleFormControlInput1">Correo Electrónico</label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        <label for="exampleFormControlInput3">Correo Electrónico</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput3"
                                             placeholder="nombre@ejemplo.com">
                                     </div>
                                 </div>
@@ -92,8 +92,8 @@
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
-                                        <label for="exampleFormControlInput1">Hora</label>
-                                        <input type="time" class="form-control" id="exampleFormControlInput1" step="1800">
+                                        <label for="exampleFormControlInput5">Hora</label>
+                                        <input type="time" class="form-control" id="exampleFormControlInput5" step="1800">
                                     </div>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@
                     <!-- Formulario Modal -->
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                     <button type="button" class="btn confirmar">Enviar</button>
                 </div>
             </div>
@@ -115,8 +115,10 @@
     <header class="d-flex align-items-center">
         <div class="container mx-5">
             <div class="row  justify-content-end">
-                <div class="col-12 col-md-4">
-                    <img src="./assets/img/banner.png" class="img-fluid" alt="">
+                <div class="col-12 col-md-4 recuadro-voucher">
+                    <!-- <img src="./assets/img/banner.png" class="img-fluid" alt="Voucher que ofrece un 20% de descuento para el primer corte de un cliente."> -->
+                    <h1 class="titulo-seccion">Bienvenidos al sitio web de CharmyDogs</h1>
+                    <h2>Disfruta de un <span class="fw-bold">20% Descuento</span> en el Primer Corte !</h2>
                 </div>
             </div>
         </div>
@@ -128,8 +130,10 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6 col-lg-4 recuadro ps-5">
                     <h2 class="titulo-seccion">Peluqueria Canina Natural</h2>
-                    <p>Con CharmyDogs puede estar seguro de que nuestro personal tratará con mucho cuidado a su mascota en un ambiente limpio y
+                    <p>Con CharmyDogs puede estar seguro de que <span class="fw-bold">nuestro personal tratará con mucho cuidado a su mascota</span> en un ambiente limpio y
                     seguro, y sabrá que el servicio tendrá un acabado excepcionalmente alto a un precio justo.</p>
+                    <p>Nuestra experiencia, pasión por el trabajo que realizamos y la satisfacción que muestran los clientes nos posiciona como
+                    una <span class="fw-bold">peluquería canina de referencia en Marbella</span>.</p>
                     <button type="button" class="btn booking" 
                     data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Reserva tu turno
@@ -139,22 +143,22 @@
                 <div class="col-12 col-md-6 fotos">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active outline-off"
                                 aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="outline-off"
                                 aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
+                                aria-label="Slide 3" class="outline-off"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active item-galeria">
-                                <img src="assets/img/dogwood-staff.jpg" class="d-block w-100 carou-img" alt="...">
+                                <img src="assets/img/dogwood-staff.jpg" class="d-block w-100 carou-img" alt="Foto de nuestra peluquería. Se puede observar a dos integrantes del staff cortandole el cabello a los perros.">
                             </div>
                             <div class="carousel-item item-galeria">
-                                <img src="./assets/img/spa-window.jpg" class="d-block w-100 carou-img" alt="...">
+                                <img src="./assets/img/spa-window.jpg" class="d-block w-100 carou-img" alt="Foto de la peluquería tomada desde afuera del local. Se observa a una de nuestras empleadas trabajando con un un perrito.">
                             </div>
                             <div class="carousel-item item-galeria">
-                                <img src="assets/img/header.jpg" class="d-block w-100 carou-img" alt="...">
+                                <img src="assets/img/header.jpg" class="d-block w-100 carou-img" alt="Foto que muestra la totalidad del local.">
                             </div>
                         </div>
                     </div>
@@ -168,14 +172,14 @@
         <div class="container-fluid fondo-lila py-5">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6 text-end me-md-5">
-                    <img src="./assets/img/montage.png" class="img-fluid" alt="">
+                    <img src="./assets/img/montage.png" class="img-fluid" alt="Collage de 4 fotos de perritos que pasaron por nuestra peluquería.">
                 </div>
                 <div class="col-12 col-md-4">
                     <h2 class="titulo-seccion w-75">Paquetes y tratamientos especializados</h2>
-                    <p class="pe-lg-5 justificado">Entendemos que cada mascota que nos visita es un individuo único, por esta razón, adaptamos nuestros servicios para
-                    amoldarse a las necesidades de cada mascota. Podemos asesorar sobre el cuidado general del pelaje y los productos de
+                    <p class="pe-lg-5 justificado">Entendemos que cada mascota que nos visita es un individuo único, por esta razón, <span class="fw-bold">adaptamos nuestros servicios para
+                    amoldarse a las necesidades de cada mascota</span>. Podemos asesorar sobre el cuidado general del pelaje y los productos de
                     aseo, así como recomendar un programa de aseo para mantener la apariencia elegante de su mascota.</p>
-                    <a href="./servicios.html"><button class="btn booking" type="submit">ver servicios</button></a>
+                    <a href="./servicios.html" class="btn booking">ver servicios</a>
                 </div>
             </div>
         </div>
@@ -201,7 +205,23 @@
                                                 exclusivo spray para cachorros.</p>
                                         </div>
                                         <div class="col-12 col-md-5">
-                                            <img src="./assets/img/perritosA-D/1.jpg" class="d-block img-fluid fotoAD" alt="...">
+                                            <img src="./assets/img/perritosA-D/1.jpg" class="d-block img-fluid fotoAD" alt="Foto de un caniche color marron que muestra el antes y después de su tratamiento.">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item item-galeria">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-md-4">
+                                                <h3 class="titulo-seccion text-light">Emilio</h3>
+                                                <p>En esta ocasion el dueño de Emilio nos había solicitado un corte original, ya que iba a celebrar su cunpleaños. Por esta razon, nos pusimos creativos y le dimos este look a Emilio. </p>
+                                                <p>Lo bañamos
+                                                con champú para cachorros CharmyDogs, lo secamos suavemente, limpiamos sus orejas y cortamos las uñas de los pies. Luego
+                                                recortamos alrededor de sus ojos, cara y pies y atendimos sus áreas de higiene.</p>
+                                        </div>
+                                        <div class="col-12 col-md-5">
+                                            <img src="./assets/img/perritosA-D/5.jpg" class="d-block img-fluid fotoAD" alt="Foto que muestra el antes y después de un yorkshire terrier que paso por nuestra peluquería.">
                                         </div>
                                     </div>
                                 </div>
@@ -217,7 +237,7 @@
                                             </div>
                                         </div>
                                         <div class="col-12 col-md-5">
-                                            <img src="./assets/img/perritosA-D/2.jpg" class="d-block d-block img-fluid fotoAD" alt="...">
+                                            <img src="./assets/img/perritosA-D/2.jpg" class="d-block d-block img-fluid fotoAD" alt="Foto que muestra el antes y después de una yorkshire terrier de color blanca con manchas negras.">
                                         </div>
                                     </div>
                                 </div>
@@ -234,7 +254,7 @@
                                             </div>
                                         </div>
                                         <div class="col-12 col-md-5">
-                                            <img src="./assets/img/perritosA-D/3.jpg" class="d-block d-block img-fluid fotoAD" alt="...">
+                                            <img src="./assets/img/perritosA-D/3.jpg" class="d-block d-block img-fluid fotoAD" alt="Foto de que muestra el antes y despueés después de un caniche blanco.">
                                         </div>
                                     </div>
                                 </div>
@@ -249,17 +269,17 @@
                                             </div>
                                         </div>
                                         <div class="col-12 col-md-5">
-                                            <img src="./assets/img/perritosA-D/sami.jpg" class="d-block d-block img-fluid fotoAD" alt="...">
+                                            <img src="./assets/img/perritosA-D/sami.jpg" class="d-block d-block img-fluid fotoAD" alt="Una chica con una camiseta amarilla peinando a un Samoyedo sonriente de pelo blanco.">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <button class="carousel-control-prev outline-off" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <button class="carousel-control-next outline-off" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -280,10 +300,11 @@
                         <p class="pe-lg-5 justificado">En CharmyDogs, los miembros de nuestro equipo son cuidadosamente seleccionados para garantizar que usted y su
                         mascota reciban el mejor servicio.
                         </p>
-                        <a href="./about.html"><button class="btn booking mb-3" type="submit">Conócenos</button></a>
+                        <p>Nuestro personal cuenta con <span class="fw-bold">varios años de experiencia y formación en la industria</span>. Sin embargo lo más importante es que ademas de ser excelentes profesionales son muy buenas personas.</p>
+                        <a href="./about.html" class="btn booking mb-3">Conócenos</a>
                     </div>
                     <div class="col-12 col-md-6">
-                        <img src="./assets/img/julie-and-dog.jpg" class="img-fluid foto-staff" alt="">
+                        <img src="./assets/img/julie-and-dog.jpg" class="img-fluid foto-staff" alt="Una de nuestras empleadas sosteniendo a un perrito y posando para la foto.">
                     </div>
                 </div>
             </div>
@@ -299,38 +320,39 @@
                     <p class="pe-md-5">El ambiente relajado que hemos creado en CharmyDogs ha demostrado ser una experiencia positiva para los perros de
                     naturaleza nerviosa y proporciona el lugar perfecto para introducir a los cachorros jóvenes al proceso de preparación
                     profesional.</p>
-                    <p class="pe-md-5">Somos un spa natural para el cuidado de mascotas, y los productos que utilizamos provienen de nuestra propia gama de
-                    champús, acondicionadores y aerosoles naturales, que también están disponibles para comprar para su propio uso en el
-                    hogar. Nuestra gama, que contiene los mejores extractos y aceites orgánicos, limpia en profundidad y es amable incluso
+                    <p class="pe-md-5">Somos un spa natural para el cuidado de mascotas y <span class="fw-bold">los productos que utilizamos provienen de nuestra propia gama de
+                    champús, acondicionadores y aerosoles naturales</span>, que también están disponibles para comprar para su propio uso en el
+                    hogar. </p>
+                    <p class="pe-md-5">Nuestra gama, que contiene los mejores extractos y aceites orgánicos, limpia en profundidad y es amable incluso
                     con las pieles más sensibles.</p>
-                    <a href="./productos.html"><button class="btn booking" type="submit">ver productos</button></a>
+                    <a href="./productos.html" class="btn booking">ver productos</a>
                 </div>
                 <!-- Galeria -->
                 <div class="col-12 col-md-5 fotos ">
-                    <img src="./assets/img/golden.jpg" class="img-fluid foto-golden" alt="">
+                    <img src="./assets/img/golden.jpg" class="img-fluid foto-golden" alt="Un Golden al borde de una bañera, con espuma en el cabello. Al borde de la bañera encontramos un cepillo de madera y un jabón.">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- section 6 - Características -->
-    <section class="pt-5 pb-5">
+    <section class="pt-5 pb-5 seccion-caracteristicas">
         <div class="container-fluid fondo-6 pt-5">
             <div class="container px-5">
                 <div class="row justify-content-center text-center">
                     <div class="col-12 col-md-4">
                         <i class="fas fa-seedling icono-c"></i>
-                        <h5 class=" titulo-seccion">100% Natural</h5>
+                        <h3 class=" titulo-seccion">100% Natural</h3>
                         <p class="caracteristicas">Todos los productos que utilizamos en nuestro local contienen ingredientes de origen natural y sostenibles.</p>
                     </div>
                     <div class="col-12 col-md-4">
                         <i class="fas fa-paw icono-c"></i>
-                        <h5 class=" titulo-seccion ">Amigable con los animales</h5>
+                        <h3 class=" titulo-seccion ">Amigable con los animales</h3>
                         <p class="caracteristicas ">Solo utilizamos productos e ingredientes que cuidan a nuestros animales.</p>
                     </div>
                     <div class="col-12 col-md-4">
                         <i class="fas fa-globe-europe icono-c"></i>
-                        <h5 class=" titulo-seccion ">Hecho en España</h5>
+                        <h3 class=" titulo-seccion ">Hecho en España</h3>
                         <p class="caracteristicas ">Nos sentimos orgullosos de que todos los productos que utilizamos sean de empresas españolas.</p>
                     </div>
                 </div>
@@ -342,7 +364,7 @@
         <div class="container">
             <footer class="row px-md-5 pb-5">
                 <div class="col-6 col-md-3">
-                    <h5 class="titulo-seccion">Enlaces</h5>
+                    <h4 class="titulo-seccion">Enlaces</h4>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-muted">Inicio</a></li>
                         <li class="nav-item mb-2"><a href="./servicios.html" class="nav-link p-0 text-muted">Servicios</a></li>
@@ -353,27 +375,27 @@
                 </div>
         
                 <div class="col-6 col-md-3">
-                    <h5 class="titulo-seccion">Síguenos</h5>
+                    <h4 class="titulo-seccion">Síguenos</h4>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Facebook</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Instagram</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.facebook.com/groups/809902083176217" class="nav-link p-0 text-muted">Facebook</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.instagram.com/tdhspapamperclub/" class="nav-link p-0 text-muted">Instagram</a></li>
                     </ul>
                 </div>
         
                 <div class="col-6 col-md-3">
-                    <h5 class="titulo-seccion">Date el gusto</h5>
-                    <ul class="nav flex-column">
+                    <h4 class="titulo-seccion">Date el gusto</h4>
+                    <div class="nav flex-column">
                         <button type="button" class="w-75" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Reserva tu turno
                             <span class="btn-span"></span>
                         </button>
-                    </ul>
+                    </div>
                 </div>
 
 
                 <div class="col-6 col-md-3 text-center">
                     <a href="/" class="d-flex align-items-center justify-content-center mb-3 link-dark text-decoration-none">
-                        <img src="./assets/img/CharmyDogs-Logo2.png" class="img-fluid w-50" alt="">
+                        <img src="./assets/img/CharmyDogs-Logo2.png" class="img-fluid w-50" alt="Logo de la empresa.">
                     </a>
                     <p class="text-muted">CharmyDogs &copy; 2022</p>
                     <p class="footer-autor">Hecho por <a href="https://julianeggle.com" class="text-dark">Julián Eggle</a></p>
